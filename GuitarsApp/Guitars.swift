@@ -16,6 +16,7 @@ struct Guitar {
     let yearIntro: Int
     let guitarImageName: String
     let description: String
+    let avgPrice: Double
     
     
     static let allGuitars: [Guitar] = [
@@ -25,7 +26,8 @@ struct Guitar {
                players: ["John Frusciante", "John Mayer", "Eric Clapton", "Christian Hurtado", "David Gilmour", "Jimi Hendrix"],
                yearIntro: 1954,
                guitarImageName: "",
-               description: ""),
+               description: "",
+               avgPrice: 999.99),
         
         Guitar(brand: "Gibson",
                type: "Electric",
@@ -33,7 +35,8 @@ struct Guitar {
                players: ["Slash","Chuck Berry", "Joan Jett", "Jimmy Page"],
                yearIntro: 1952,
                guitarImageName: "",
-               description: ""),
+               description: "",
+               avgPrice: 1299.99),
         
         Guitar(brand: "Fender",
                type: "Electric",
@@ -41,14 +44,58 @@ struct Guitar {
                players: ["Jeff Buckley","Jonny Greenwood", "George Harrison"],
                yearIntro: 1950,
                guitarImageName: "",
-               description: ""),
+               description: "",
+               avgPrice: 1199.99),
+    
         Guitar(brand: "Gibson",
                type: "Electric",
                series: "SG",
                players: ["Angus Young","Tony Iommi", ""],
                yearIntro: 1961,
                guitarImageName: "",
-               description: "")
+               description: "",
+               avgPrice: 1199.99),
+        Guitar(brand: "Gibson",
+               type: "Electric",
+               series: "Flying V",
+               players: ["James Hetfield", "Dave Mustaine", "Kerry King"],
+               yearIntro: 1958,
+               guitarImageName: "",
+               description: "",
+               avgPrice: 799.99),
+  /*      Guitar(brand: "",
+               type: <#T##String#>,
+               series: <#T##String#>,
+               players: <#T##[String]#>,
+               yearIntro: <#T##Int#>,
+               guitarImageName: <#T##String#>,
+               description: <#T##String#>,
+               avgPrice: <#Double#>),
+        Guitar(brand: "",
+               type: <#T##String#>,
+               series: <#T##String#>,
+               players: <#T##[String]#>,
+               yearIntro: <#T##Int#>,
+               guitarImageName: <#T##String#>,
+               description: <#T##String#>,
+               avgPrice: <#Double#>),
+        Guitar(brand: "",
+               type: <#T##String#>,
+               series: <#T##String#>,
+               players: <#T##[String]#>,
+               yearIntro: <#T##Int#>,
+               guitarImageName: <#T##String#>,
+               description: <#T##String#>,
+               avgPrice: <#Double#>),
+        Guitar(brand: "",
+               type: <#T##String#>,
+               series: <#T##String#>,
+               players: <#T##[String]#>,
+               yearIntro: <#T##Int#>,
+               guitarImageName: <#T##String#>,
+               description: <#T##String#>,
+               avgPrice: <#Double#>),
+  */
         
     ]
 }

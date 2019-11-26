@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Guitars!-->
+        <!--Pick your guitar!-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="guitarViewController" customModule="GuitarsApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -63,30 +63,132 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Guitars!" id="ZDL-qa-MBb"/>
+                    <navigationItem key="navigationItem" title="Pick your guitar!" id="ZDL-qa-MBb"/>
                     <connections>
                         <outlet property="tableView" destination="NLB-bZ-NVg" id="Nl9-YQ-FeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+            <point key="canvasLocation" x="901" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--Build your pedalboard!-->
         <scene sceneID="qGs-XS-bsZ">
             <objects>
-                <viewController id="d1G-mW-6e9" sceneMemberID="viewController">
+                <viewController id="d1G-mW-6e9" customClass="PedalViewController" customModule="GuitarsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BsC-A3-xKF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pedalBoard" translatesAutoresizingMaskIntoConstraints="NO" id="jL7-i5-c9P">
+                                <rect key="frame" x="0.0" y="140" width="414" height="194"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Z6U-RG-zMj">
+                                <rect key="frame" x="0.0" y="342" width="414" height="520"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="pedalCell" rowHeight="111" id="AOX-dQ-FHO" customClass="PedalCell" customModule="GuitarsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AOX-dQ-FHO" id="4Ql-Fc-tYq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="111"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BrandLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OsS-sD-4dy">
+                                                    <rect key="frame" x="0.0" y="0.0" width="91" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cp-G2-enS">
+                                                    <rect key="frame" x="0.0" y="29" width="45" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="priceLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ar-Tm-Chp">
+                                                    <rect key="frame" x="0.0" y="90" width="80" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fxName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hR-68-yDU">
+                                                    <rect key="frame" x="0.0" y="58" width="59.5" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-YH-4U1">
+                                                    <rect key="frame" x="305" y="0.0" width="109" height="111"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9hR-68-yDU" firstAttribute="leading" secondItem="4Ql-Fc-tYq" secondAttribute="leading" id="1ON-Oz-cWU"/>
+                                                <constraint firstItem="6Ar-Tm-Chp" firstAttribute="leading" secondItem="4Ql-Fc-tYq" secondAttribute="leading" id="1WC-ES-kmO"/>
+                                                <constraint firstItem="OsS-sD-4dy" firstAttribute="leading" secondItem="4Ql-Fc-tYq" secondAttribute="leading" id="5dV-KS-PlV"/>
+                                                <constraint firstAttribute="bottom" secondItem="6Ar-Tm-Chp" secondAttribute="bottom" id="7hX-gz-RGD"/>
+                                                <constraint firstItem="9hR-68-yDU" firstAttribute="top" secondItem="0cp-G2-enS" secondAttribute="bottom" constant="8" id="8Pk-Ls-7ZV"/>
+                                                <constraint firstItem="0cp-G2-enS" firstAttribute="top" secondItem="OsS-sD-4dy" secondAttribute="bottom" constant="8" id="8Wh-xg-diK"/>
+                                                <constraint firstItem="OsS-sD-4dy" firstAttribute="top" secondItem="4Ql-Fc-tYq" secondAttribute="top" id="Nxn-8H-hO6"/>
+                                                <constraint firstItem="0cp-G2-enS" firstAttribute="leading" secondItem="4Ql-Fc-tYq" secondAttribute="leading" id="T2b-6c-O2k"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="brandLabel" destination="OsS-sD-4dy" id="jFP-Ma-yzh"/>
+                                            <outlet property="fxLabel" destination="9hR-68-yDU" id="2U6-be-jLM"/>
+                                            <outlet property="nameLabel" destination="0cp-G2-enS" id="qg6-VI-gRJ"/>
+                                            <outlet property="pedalPrice" destination="6Ar-Tm-Chp" id="nOP-tr-GTb"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ktn-Qe-eh9">
+                                <rect key="frame" x="33" y="140" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i39-a0-wtg">
+                                <rect key="frame" x="118" y="140" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4P-nw-2s2">
+                                <rect key="frame" x="118" y="236" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rfd-5e-48W">
+                                <rect key="frame" x="33" y="236" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WkL-yP-XbW">
+                                <rect key="frame" x="236" y="140" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D6z-YX-4SP">
+                                <rect key="frame" x="322" y="140" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5cv-3z-XXa">
+                                <rect key="frame" x="322" y="236" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bhp-d4-ob3">
+                                <rect key="frame" x="236" y="236" width="60" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qkC-nO-l7V"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8Eu-Ha-1xk"/>
+                    <navigationItem key="navigationItem" title="Build your pedalboard!" id="8Eu-Ha-1xk"/>
+                    <connections>
+                        <outlet property="pedalTableView" destination="Z6U-RG-zMj" id="D9n-E9-kzA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0D7-Ja-0Wc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852" y="135"/>
+            <point key="canvasLocation" x="1689.8550724637682" y="129.91071428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tUp-Qu-Zcf">
@@ -117,4 +219,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pedalBoard" width="588" height="302"/>
+    </resources>
 </document>

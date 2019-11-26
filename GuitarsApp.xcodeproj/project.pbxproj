@@ -14,6 +14,10 @@
 		135FE2A9238A1FBB0003DD94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 135FE2A8238A1FBB0003DD94 /* Assets.xcassets */; };
 		135FE2AC238A1FBB0003DD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135FE2AA238A1FBB0003DD94 /* LaunchScreen.storyboard */; };
 		135FE2B4238A20130003DD94 /* Guitars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2B3238A20130003DD94 /* Guitars.swift */; };
+		135FE2B8238A59C70003DD94 /* Pedals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2B7238A59C70003DD94 /* Pedals.swift */; };
+		135FE2BA238A5E0D0003DD94 /* Amplifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2B9238A5E0D0003DD94 /* Amplifiers.swift */; };
+		135FE2E0238C60140003DD94 /* PedalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2DF238C60140003DD94 /* PedalViewController.swift */; };
+		135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2E3238C822D0003DD94 /* PedalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		135FE2AB238A1FBB0003DD94 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		135FE2AD238A1FBB0003DD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		135FE2B3238A20130003DD94 /* Guitars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitars.swift; sourceTree = "<group>"; };
+		135FE2B7238A59C70003DD94 /* Pedals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedals.swift; sourceTree = "<group>"; };
+		135FE2B9238A5E0D0003DD94 /* Amplifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amplifiers.swift; sourceTree = "<group>"; };
+		135FE2DF238C60140003DD94 /* PedalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedalViewController.swift; sourceTree = "<group>"; };
+		135FE2E3238C822D0003DD94 /* PedalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 			children = (
 				135FE29F238A1FB80003DD94 /* AppDelegate.swift */,
 				135FE2B3238A20130003DD94 /* Guitars.swift */,
+				135FE2B7238A59C70003DD94 /* Pedals.swift */,
+				135FE2E3238C822D0003DD94 /* PedalCell.swift */,
 				135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */,
+				135FE2B9238A5E0D0003DD94 /* Amplifiers.swift */,
 				135FE2A3238A1FB80003DD94 /* guitarViewController.swift */,
 				135FE2A5238A1FB80003DD94 /* Main.storyboard */,
+				135FE2DF238C60140003DD94 /* PedalViewController.swift */,
 				135FE2A8238A1FBB0003DD94 /* Assets.xcassets */,
 				135FE2AA238A1FBB0003DD94 /* LaunchScreen.storyboard */,
 				135FE2AD238A1FBB0003DD94 /* Info.plist */,
@@ -141,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */,
+				135FE2B8238A59C70003DD94 /* Pedals.swift in Sources */,
 				135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */,
 				135FE2A0238A1FB80003DD94 /* AppDelegate.swift in Sources */,
+				135FE2BA238A5E0D0003DD94 /* Amplifiers.swift in Sources */,
 				135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */,
+				135FE2E0238C60140003DD94 /* PedalViewController.swift in Sources */,
 				135FE2B4238A20130003DD94 /* Guitars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
