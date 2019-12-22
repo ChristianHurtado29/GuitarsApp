@@ -12,7 +12,7 @@ class guitarViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    
+
     var guitars = [Guitar](){
         didSet{
             tableView?.reloadData()
@@ -29,9 +29,7 @@ class guitarViewController: UIViewController {
     func loadData(){
         guitars = Guitar.allGuitars
  }
-
 }
-
 
 extension guitarViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,19 +38,15 @@ extension guitarViewController: UITableViewDataSource{
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "guitarCell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "guitarCell", for: indexPath) as! GuitarCell
         let guitar = guitars[indexPath.row]
-        
-        cell.textLabel?.text = guitar.brand
-        cell.detailTextLabel?.text = guitar.series
-//        cell.imageView?.image = UIImage(named: guitar.guitarImageName)
-        
+        cell.configureCell(for: guitar)
         return cell
     }
-
-
 }
 extension guitarViewController: UITableViewDelegate{
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        120
+    }
 }

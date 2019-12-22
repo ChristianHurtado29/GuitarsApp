@@ -11,22 +11,25 @@ import UIKit
 class PedalViewController: UIViewController{
 
 @IBOutlet weak var pedalTableView:UITableView!
+@IBOutlet weak var ampButtonBackdrop: UIImageView!
+    
+    
     
     var pedals = [[Pedal]]()
 
 override func viewDidLoad(){
     super.viewDidLoad()
     pedalTableView.dataSource = self
+    pedalTableView.delegate = self
     loadData()
-}
+    ampButtonBackdrop.image = #imageLiteral(resourceName: "ampbutt")
+} 
     
     func loadData() {
         pedals = [Pedal.allPedals]
 }
     
-    
 }
-
 extension PedalViewController: UITableViewDataSource{
  
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -64,5 +67,12 @@ extension PedalViewController: UITableViewDataSource{
         let itemToMove = pedals[sourceIndexPath.section][sourceIndexPath.row]
         pedals[sourceIndexPath.section].remove (at: sourceIndexPath.row)
         pedals[destinationIndexPath.section].insert(itemToMove, at: destinationIndexPath.row)
+    }
+}
+
+
+extension PedalViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        120
     }
 }

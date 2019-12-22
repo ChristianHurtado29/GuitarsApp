@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1342726B2397151D00A922EE /* GuitarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342726A2397151D00A922EE /* GuitarCell.swift */; };
 		135FE2A0238A1FB80003DD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE29F238A1FB80003DD94 /* AppDelegate.swift */; };
 		135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */; };
 		135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A3238A1FB80003DD94 /* guitarViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1342726A2397151D00A922EE /* GuitarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarCell.swift; sourceTree = "<group>"; };
 		135FE29C238A1FB80003DD94 /* GuitarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FE29F238A1FB80003DD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			children = (
 				135FE29F238A1FB80003DD94 /* AppDelegate.swift */,
 				135FE2B3238A20130003DD94 /* Guitars.swift */,
+				1342726A2397151D00A922EE /* GuitarCell.swift */,
 				135FE2B7238A59C70003DD94 /* Pedals.swift */,
 				135FE2E3238C822D0003DD94 /* PedalCell.swift */,
 				135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */,
@@ -161,6 +164,7 @@
 				135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */,
 				135FE2E0238C60140003DD94 /* PedalViewController.swift in Sources */,
 				135FE2B4238A20130003DD94 /* Guitars.swift in Sources */,
+				1342726B2397151D00A922EE /* GuitarCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
