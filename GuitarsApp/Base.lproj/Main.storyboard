@@ -55,6 +55,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="guitarImage" destination="pKm-OZ-iCt" id="tu8-wA-vMD"/>
                                             <outlet property="guitarPrice" destination="3OB-3l-Sca" id="cA6-dH-SQS"/>
                                             <outlet property="nameLabel" destination="x2F-xp-kpb" id="sdH-TN-O5x"/>
                                             <segue destination="d1G-mW-6e9" kind="show" id="1QQ-21-OGG"/>

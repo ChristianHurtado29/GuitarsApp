@@ -18,14 +18,13 @@ struct Guitar {
     let description: String
     let avgPrice: Double
     
-    
     static let allGuitars: [Guitar] = [
         Guitar(brand: "Fender",
                type: "Electric",
                series: "Stratocaster",
                players: ["John Frusciante", "John Mayer", "Eric Clapton", "Christian Hurtado", "David Gilmour", "Jimi Hendrix"],
                yearIntro: 1954,
-               guitarImageName: "fender Strat",
+               guitarImageName: "fenderStrat",
                description: "",
                avgPrice: 999.99),
         
@@ -34,7 +33,7 @@ struct Guitar {
                series: "Les Paul",
                players: ["Slash","Chuck Berry", "Joan Jett", "Jimmy Page"],
                yearIntro: 1952,
-               guitarImageName: "gibson Les paul",
+               guitarImageName: "gibsonLesPaul",
                description: "",
                avgPrice: 1299.99),
         
@@ -43,7 +42,7 @@ struct Guitar {
                series: "Telecaster",
                players: ["Jeff Buckley","Jonny Greenwood", "George Harrison"],
                yearIntro: 1950,
-               guitarImageName: "fender Tele",
+               guitarImageName: "fenderTele",
                description: "",
                avgPrice: 1199.99),
     
@@ -52,15 +51,16 @@ struct Guitar {
                series: "SG",
                players: ["Angus Young","Tony Iommi", ""],
                yearIntro: 1961,
-               guitarImageName: "gibson Sg",
+               guitarImageName: "gibsonSG",
                description: "",
                avgPrice: 1199.99),
+        
         Guitar(brand: "Gibson",
                type: "Electric",
                series: "Flying V",
                players: ["James Hetfield", "Dave Mustaine", "Kerry King"],
                yearIntro: 1958,
-               guitarImageName: "Gibson Flying V",
+               guitarImageName: "gibsonFlyingV",
                description: "",
                avgPrice: 799.99)
   /*      Guitar(brand: "",
