@@ -25,7 +25,7 @@ class PedalCell: UITableViewCell {
     @IBOutlet weak var pedalIMage8: UIImageView!
 
     func configureCell(for pedal: Pedal) {
-  //      pedalImage.image = UIImage(contentsOfFile: pedal.picture)
+  
         brandLabel.text = pedal.brand
         nameLabel.text = pedal.name
         fxLabel.text = pedal.fx

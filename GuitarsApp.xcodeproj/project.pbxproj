@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6723B5BB62001CFF51 /* AmpCell.swift */; };
+		13416A6A23B5BC2F001CFF51 /* AmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6923B5BC2F001CFF51 /* AmpViewController.swift */; };
 		1342726B2397151D00A922EE /* GuitarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342726A2397151D00A922EE /* GuitarCell.swift */; };
 		135FE2A0238A1FB80003DD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE29F238A1FB80003DD94 /* AppDelegate.swift */; };
 		135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13416A6723B5BB62001CFF51 /* AmpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpCell.swift; sourceTree = "<group>"; };
+		13416A6923B5BC2F001CFF51 /* AmpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpViewController.swift; sourceTree = "<group>"; };
 		1342726A2397151D00A922EE /* GuitarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarCell.swift; sourceTree = "<group>"; };
 		135FE29C238A1FB80003DD94 /* GuitarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FE29F238A1FB80003DD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1340B4BD23B5B46C0026E2E7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				135FE2A3238A1FB80003DD94 /* guitarViewController.swift */,
+				135FE2DF238C60140003DD94 /* PedalViewController.swift */,
+				13416A6923B5BC2F001CFF51 /* AmpViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		1340B4BE23B5B4B40026E2E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				135FE2B3238A20130003DD94 /* Guitars.swift */,
+				135FE2B7238A59C70003DD94 /* Pedals.swift */,
+				135FE2B9238A5E0D0003DD94 /* Amplifiers.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1340B4BF23B5B4CE0026E2E7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1342726A2397151D00A922EE /* GuitarCell.swift */,
+				135FE2E3238C822D0003DD94 /* PedalCell.swift */,
+				13416A6723B5BB62001CFF51 /* AmpCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		135FE293238A1FB80003DD94 = {
 			isa = PBXGroup;
 			children = (
@@ -69,15 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				135FE29F238A1FB80003DD94 /* AppDelegate.swift */,
-				135FE2B3238A20130003DD94 /* Guitars.swift */,
-				1342726A2397151D00A922EE /* GuitarCell.swift */,
-				135FE2B7238A59C70003DD94 /* Pedals.swift */,
-				135FE2E3238C822D0003DD94 /* PedalCell.swift */,
-				135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */,
-				135FE2B9238A5E0D0003DD94 /* Amplifiers.swift */,
-				135FE2A3238A1FB80003DD94 /* guitarViewController.swift */,
+				1340B4BE23B5B4B40026E2E7 /* Models */,
+				1340B4BF23B5B4CE0026E2E7 /* Cells */,
+				1340B4BD23B5B46C0026E2E7 /* View Controllers */,
 				135FE2A5238A1FB80003DD94 /* Main.storyboard */,
-				135FE2DF238C60140003DD94 /* PedalViewController.swift */,
+				135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */,
 				135FE2A8238A1FBB0003DD94 /* Assets.xcassets */,
 				135FE2AA238A1FBB0003DD94 /* LaunchScreen.storyboard */,
 				135FE2AD238A1FBB0003DD94 /* Info.plist */,
@@ -156,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */,
 				135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */,
 				135FE2B8238A59C70003DD94 /* Pedals.swift in Sources */,
 				135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */,
@@ -165,6 +196,7 @@
 				135FE2E0238C60140003DD94 /* PedalViewController.swift in Sources */,
 				135FE2B4238A20130003DD94 /* Guitars.swift in Sources */,
 				1342726B2397151D00A922EE /* GuitarCell.swift in Sources */,
+				13416A6A23B5BC2F001CFF51 /* AmpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
