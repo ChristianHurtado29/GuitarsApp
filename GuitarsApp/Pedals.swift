@@ -20,16 +20,16 @@ struct Pedal{
               name: "Loop Station",
               fx: "Looper",
               price: 99.99,
-              picture: "boss Loop"),
+              picture: "bossLoop"),
         Pedal(brand: "Boss",
               name: "Blues Driver",
               fx: "Overdrive",
               price: 79.99,
-              picture: "blues overdrive"),
+              picture: "bluesOverdrive"),
         Pedal(brand: "Dunlop",
               name: "Cry Baby Wah Pedal",
               fx: "Wah-wah",
               price: 149.99,
-              picture: "dunlop Crybaby")
+              picture: "dunlopCrybaby")
     ]
 }

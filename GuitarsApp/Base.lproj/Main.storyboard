@@ -187,6 +187,15 @@
                                             <outlet property="brandLabel" destination="OsS-sD-4dy" id="jFP-Ma-yzh"/>
                                             <outlet property="fxLabel" destination="9hR-68-yDU" id="2U6-be-jLM"/>
                                             <outlet property="nameLabel" destination="0cp-G2-enS" id="qg6-VI-gRJ"/>
+                                            <outlet property="pedalIMage3" destination="WkL-yP-XbW" id="43V-Er-7TW"/>
+                                            <outlet property="pedalIMage4" destination="D6z-YX-4SP" id="BOB-YO-Tsd"/>
+                                            <outlet property="pedalIMage5" destination="Rfd-5e-48W" id="1e6-Dr-x4c"/>
+                                            <outlet property="pedalIMage6" destination="n4P-nw-2s2" id="3Q3-4f-dQD"/>
+                                            <outlet property="pedalIMage7" destination="Bhp-d4-ob3" id="JHM-41-7WO"/>
+                                            <outlet property="pedalIMage8" destination="5cv-3z-XXa" id="Ft9-Mf-sI6"/>
+                                            <outlet property="pedalImage1" destination="Ktn-Qe-eh9" id="v5q-Hp-1hy"/>
+                                            <outlet property="pedalImage2" destination="i39-a0-wtg" id="hh6-1F-xRF"/>
+                                            <outlet property="pedalMainImage" destination="jw9-YH-4U1" id="j3a-uO-ncS"/>
                                             <outlet property="pedalPrice" destination="6Ar-Tm-Chp" id="nOP-tr-GTb"/>
                                         </connections>
                                     </tableViewCell>

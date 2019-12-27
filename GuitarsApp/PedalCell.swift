@@ -12,10 +12,17 @@ class PedalCell: UITableViewCell {
 
     @IBOutlet weak var brandLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var pedalMainImage: UIImageView!
     @IBOutlet weak var fxLabel: UILabel!
-    @IBOutlet weak var pedalImage: UIImageView!
     @IBOutlet weak var pedalPrice: UILabel!
-
+    @IBOutlet weak var pedalImage1: UIImageView!
+    @IBOutlet weak var pedalImage2: UIImageView!
+    @IBOutlet weak var pedalIMage3: UIImageView!
+    @IBOutlet weak var pedalIMage4: UIImageView!
+    @IBOutlet weak var pedalIMage5: UIImageView!
+    @IBOutlet weak var pedalIMage6: UIImageView!
+    @IBOutlet weak var pedalIMage7: UIImageView!
+    @IBOutlet weak var pedalIMage8: UIImageView!
 
     func configureCell(for pedal: Pedal) {
   //      pedalImage.image = UIImage(contentsOfFile: pedal.picture)
@@ -23,5 +30,6 @@ class PedalCell: UITableViewCell {
         nameLabel.text = pedal.name
         fxLabel.text = pedal.fx
         pedalPrice.text = String(pedal.price)
+        pedalMainImage.image = UIImage(named: pedal.picture)
     }
 }
