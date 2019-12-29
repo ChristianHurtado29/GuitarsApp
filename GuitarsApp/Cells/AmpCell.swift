@@ -22,5 +22,4 @@ class AmpCell: UITableViewCell {
         ampName.text = amp.series
         ampKnobs.text = amp.knobs.description
       }
-    
 }

@@ -26,8 +26,8 @@ class AmpViewController: UIViewController {
     }
     
     func loadData() {
-          amp = Amplifier.allAmps
-      }
+        amp = Amplifier.allAmps
+    }
     
 }
 extension AmpViewController: UITableViewDataSource {
