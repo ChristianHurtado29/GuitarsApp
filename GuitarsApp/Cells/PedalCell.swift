@@ -29,7 +29,7 @@ class PedalCell: UITableViewCell {
         brandLabel.text = pedal.brand
         nameLabel.text = pedal.name
         fxLabel.text = pedal.fx
-        pedalPrice.text = String(pedal.price)
+        pedalPrice.text = "$\(pedal.price)"
         pedalMainImage.image = UIImage(named: pedal.picture)
     }
 }

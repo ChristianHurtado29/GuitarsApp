@@ -10,7 +10,7 @@ import Foundation
 
 struct Player {
     let name: String
-    let band: String?
+    let band: String
     let hometown: String
     let genre: String
     let knownSong: String
@@ -20,6 +20,15 @@ struct Player {
     let backgroundImage: String
     
     static let allPlayers: [Player] = [
+        Player(name: "Christian Hurtado",
+               band: "SemiCrcls",
+               hometown: "Brooklyn, New York",
+               genre: "Indie Rock",
+               knownSong: "Lost Rivers",
+               years: "2009 - present",
+               description: "",
+               image: "ChristianHurtadoImg",
+               backgroundImage: ""),
         Player(name: "John Mayer",
                band: "John Mayer",
                hometown: "Bridgeport, Connecticut",
@@ -27,7 +36,7 @@ struct Player {
                knownSong: "Gravity",
                years: "1998 - present",
                description: "",
-               image: "",
+               image: "JohnMayerImg",
                backgroundImage: ""),
         Player(name: "Jimi Hendrix",
                band: "The Jimi Hendrix Experience",
@@ -36,7 +45,7 @@ struct Player {
                knownSong: "Purple Haze",
                years: "1963 - 1970",
                description: "",
-               image: "",
+               image: "JimiHendrixImg",
                backgroundImage: ""),
         Player(name: "B.B. King",
                band: "B.B. King",
@@ -45,7 +54,7 @@ struct Player {
                knownSong: "The Thrill is Gone",
                years: "1942 - 2014",
                description: "",
-               image: "",
+               image: "BBKingImg",
                backgroundImage: ""),
         Player(name: "Slash",
                band: "Guns n' Roses",
@@ -54,7 +63,7 @@ struct Player {
                knownSong: "Welcome to the Jungle",
                years: "1981 - present",
                description: "",
-               image: "",
+               image: "SlashImg",
                backgroundImage: ""),
         Player(name: "Bob Marley",
                band: "Bob Marley & the Wailers",
@@ -63,7 +72,7 @@ struct Player {
                knownSong: "Redemption Song",
                years: "1962 - 1981",
                description: "",
-               image: "",
+               image: "BobMarleyImg",
                backgroundImage: ""),
         Player(name: "James Hetfield",
                band: "Metallica",
@@ -72,7 +81,7 @@ struct Player {
                knownSong: "Enter Sandman",
                years: "1978 - present",
                description: "",
-               image: "",
+               image: "JamesHetfieldImg",
                backgroundImage: ""),
         Player(name: "Juanes",
                band: "Juanes",
@@ -81,7 +90,7 @@ struct Player {
                knownSong: "La Camisa Negra",
                years: "1988 - present",
                description: "",
-               image: "",
+               image: "JuanesImg",
                backgroundImage: "")
     ]
 }

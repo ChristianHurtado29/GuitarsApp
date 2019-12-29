@@ -433,7 +433,7 @@
         <!--Player Profiles-->
         <scene sceneID="qS4-fp-uHA">
             <objects>
-                <viewController id="pnm-XD-wka" sceneMemberID="viewController">
+                <viewController id="pnm-XD-wka" customClass="PlayerViewController" customModule="GuitarsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="shM-C2-nZ5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -446,7 +446,7 @@
                                 <rect key="frame" x="0.0" y="144" width="414" height="669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="180" id="bi1-VM-oL3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="playerCell" rowHeight="180" id="bi1-VM-oL3" customClass="PlayerCell" customModule="GuitarsApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="180"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bi1-VM-oL3" id="FUD-1i-cAS">
@@ -471,21 +471,27 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-rQ-JWX">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bandLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-rQ-JWX">
                                                     <rect key="frame" x="20" y="65.5" width="226" height="21"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-jH-LzR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genreLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bp8-jH-LzR">
                                                     <rect key="frame" x="20" y="94.5" width="226" height="18"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs5-9c-OL3">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yearsLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs5-9c-OL3">
                                                     <rect key="frame" x="20" y="153" width="226" height="16"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="songLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hR3-zN-gTS">
+                                                    <rect key="frame" x="20" y="120.5" width="226" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -493,7 +499,10 @@
                                             <constraints>
                                                 <constraint firstItem="hh4-rQ-JWX" firstAttribute="leading" secondItem="FUD-1i-cAS" secondAttribute="leadingMargin" id="4nV-YG-Kd5"/>
                                                 <constraint firstItem="Bp8-jH-LzR" firstAttribute="top" secondItem="hh4-rQ-JWX" secondAttribute="bottom" constant="8" id="6L0-4e-9oq"/>
+                                                <constraint firstItem="hR3-zN-gTS" firstAttribute="top" secondItem="Bp8-jH-LzR" secondAttribute="bottom" constant="8" id="747-u4-sWD"/>
+                                                <constraint firstItem="hR3-zN-gTS" firstAttribute="leading" secondItem="FUD-1i-cAS" secondAttribute="leadingMargin" id="8aZ-Tz-DxD"/>
                                                 <constraint firstItem="DoD-7s-t81" firstAttribute="leading" secondItem="jdZ-Kf-SJq" secondAttribute="trailing" constant="8" id="8wo-RX-tLZ"/>
+                                                <constraint firstItem="DoD-7s-t81" firstAttribute="leading" secondItem="hR3-zN-gTS" secondAttribute="trailing" constant="8" id="DPo-JL-3ke"/>
                                                 <constraint firstItem="DoD-7s-t81" firstAttribute="leading" secondItem="akL-kz-zpA" secondAttribute="trailing" constant="8" id="LEc-3Z-uSz"/>
                                                 <constraint firstItem="DoD-7s-t81" firstAttribute="leading" secondItem="hh4-rQ-JWX" secondAttribute="trailing" constant="8" id="O3y-F7-lrP"/>
                                                 <constraint firstItem="DoD-7s-t81" firstAttribute="leading" secondItem="Bp8-jH-LzR" secondAttribute="trailing" constant="8" id="T1i-TU-TTi"/>
@@ -511,6 +520,14 @@
                                                 <constraint firstItem="jdZ-Kf-SJq" firstAttribute="leading" secondItem="FUD-1i-cAS" secondAttribute="leadingMargin" id="ylk-lP-Feg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="bandLabel" destination="hh4-rQ-JWX" id="7Rp-RL-cAK"/>
+                                            <outlet property="genreLabel" destination="Bp8-jH-LzR" id="Bob-hH-8tD"/>
+                                            <outlet property="hometownLabel" destination="jdZ-Kf-SJq" id="oxj-4t-fjg"/>
+                                            <outlet property="playerName" destination="akL-kz-zpA" id="b2K-MS-dSF"/>
+                                            <outlet property="songLabel" destination="hR3-zN-gTS" id="Epz-ji-qus"/>
+                                            <outlet property="yearsActive" destination="Cs5-9c-OL3" id="lcx-yC-wgk"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -528,6 +545,9 @@
                         <viewLayoutGuide key="safeArea" id="bvn-0Z-h4Y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Player Profiles" id="MD5-1s-0Zr"/>
+                    <connections>
+                        <outlet property="tableView" destination="Ee1-bJ-hp6" id="ioL-WC-VVC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="co0-vA-UFG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

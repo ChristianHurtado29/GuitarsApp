@@ -9,22 +9,46 @@
 import UIKit
 
 class PlayerViewController: UIViewController {
+    
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    var players = [Player](){
+    didSet{
+        tableView?.reloadData()
+    }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        loadData()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func loadData() {
+        players = Player.allPlayers
     }
-    */
+}
 
+extension PlayerViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        players.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "playerCell", for: indexPath) as? PlayerCell else {
+            fatalError("yikes!")
+        }
+        
+        let selPlayer = players[indexPath.row]
+        cell.configureCell(for: selPlayer)
+        return cell
+    }
+}
+
+extension PlayerViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 170
+    }
 }

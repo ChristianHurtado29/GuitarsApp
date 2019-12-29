@@ -23,6 +23,7 @@
 		135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2E3238C822D0003DD94 /* PedalCell.swift */; };
 		136C249223B828670011ECF0 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 136C249123B828670011ECF0 /* Player.swift */; };
 		13FA3A4823B83175007D5DCB /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA3A4723B83175007D5DCB /* PlayerViewController.swift */; };
+		13FA3A4A23B8337E007D5DCB /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13FA3A4923B8337E007D5DCB /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		135FE2E3238C822D0003DD94 /* PedalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedalCell.swift; sourceTree = "<group>"; };
 		136C249123B828670011ECF0 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		13FA3A4723B83175007D5DCB /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		13FA3A4923B8337E007D5DCB /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				1342726A2397151D00A922EE /* GuitarCell.swift */,
 				135FE2E3238C822D0003DD94 /* PedalCell.swift */,
 				13416A6723B5BB62001CFF51 /* AmpCell.swift */,
+				13FA3A4923B8337E007D5DCB /* PlayerCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			files = (
 				13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */,
 				135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */,
+				13FA3A4A23B8337E007D5DCB /* PlayerCell.swift in Sources */,
 				136C249223B828670011ECF0 /* Player.swift in Sources */,
 				135FE2B8238A59C70003DD94 /* Pedals.swift in Sources */,
 				135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */,
