@@ -26,6 +26,16 @@ class PlayerViewController: UIViewController {
         tableView.delegate = self
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailedPlayerController = segue.destination as? DetailedPlayerViewController,
+            let indexPath = tableView.indexPathForSelectedRow else{
+                fatalError("missed cell!")
+        }
+        let player = players[indexPath.row]
+        detailedPlayerController.player = player
+    }
+    
+    
     func loadData() {
         players = Player.allPlayers
     }

@@ -23,8 +23,8 @@ class PlayerCell: UITableViewCell {
         hometownLabel.text = player.hometown
         bandLabel.text = player.band
         genreLabel.text = "Genre: \(player.genre)"
-        songLabel.text = "Known song: \(player.knownSong)"
-        yearsActive.text = "Years active: \(player.years)"
+        songLabel.text = "Song: \(player.knownSong)"
+        yearsActive.text = "Years: \(player.years)"
         cellImage.image = UIImage(named: player.image)
     }
 }

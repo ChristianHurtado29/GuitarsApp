@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1319D08F23B94B9D005DB1B9 /* DetailedPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1319D08E23B94B9D005DB1B9 /* DetailedPlayerViewController.swift */; };
 		13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6723B5BB62001CFF51 /* AmpCell.swift */; };
 		13416A6A23B5BC2F001CFF51 /* AmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6923B5BC2F001CFF51 /* AmpViewController.swift */; };
 		1342726B2397151D00A922EE /* GuitarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342726A2397151D00A922EE /* GuitarCell.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1319D08E23B94B9D005DB1B9 /* DetailedPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedPlayerViewController.swift; sourceTree = "<group>"; };
 		13416A6723B5BB62001CFF51 /* AmpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpCell.swift; sourceTree = "<group>"; };
 		13416A6923B5BC2F001CFF51 /* AmpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpViewController.swift; sourceTree = "<group>"; };
 		1342726A2397151D00A922EE /* GuitarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarCell.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				135FE2DF238C60140003DD94 /* PedalViewController.swift */,
 				13416A6923B5BC2F001CFF51 /* AmpViewController.swift */,
 				13FA3A4723B83175007D5DCB /* PlayerViewController.swift */,
+				1319D08E23B94B9D005DB1B9 /* DetailedPlayerViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				135FE2E0238C60140003DD94 /* PedalViewController.swift in Sources */,
 				135FE2B4238A20130003DD94 /* Guitars.swift in Sources */,
 				1342726B2397151D00A922EE /* GuitarCell.swift in Sources */,
+				1319D08F23B94B9D005DB1B9 /* DetailedPlayerViewController.swift in Sources */,
 				13416A6A23B5BC2F001CFF51 /* AmpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
