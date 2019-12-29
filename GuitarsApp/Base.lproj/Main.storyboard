@@ -386,7 +386,7 @@
         <scene sceneID="tUp-Qu-Zcf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I7B-XO-MhG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="cN8-sk-Imy"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="guitars" catalog="system" id="cN8-sk-Imy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="cr6-Dm-Gzq">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -453,7 +453,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="180"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-7s-t81">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DoD-7s-t81">
                                                     <rect key="frame" x="254" y="0.0" width="160" height="180"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="160" id="B9H-88-goE"/>
@@ -521,12 +521,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="bandLabel" destination="hh4-rQ-JWX" id="7Rp-RL-cAK"/>
+                                            <outlet property="bandLabel" destination="jdZ-Kf-SJq" id="K4h-9x-0HQ"/>
+                                            <outlet property="cellImage" destination="DoD-7s-t81" id="mZj-97-PK7"/>
                                             <outlet property="genreLabel" destination="Bp8-jH-LzR" id="Bob-hH-8tD"/>
-                                            <outlet property="hometownLabel" destination="jdZ-Kf-SJq" id="oxj-4t-fjg"/>
+                                            <outlet property="hometownLabel" destination="hh4-rQ-JWX" id="XdO-99-oBj"/>
                                             <outlet property="playerName" destination="akL-kz-zpA" id="b2K-MS-dSF"/>
                                             <outlet property="songLabel" destination="hR3-zN-gTS" id="Epz-ji-qus"/>
                                             <outlet property="yearsActive" destination="Cs5-9c-OL3" id="lcx-yC-wgk"/>
+                                            <segue destination="XSx-6c-c07" kind="show" id="QZ3-hI-Vgb"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -553,11 +555,27 @@
             </objects>
             <point key="canvasLocation" x="1834.7826086956522" y="1064.7321428571429"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2cj-0U-iAp">
+            <objects>
+                <viewController id="XSx-6c-c07" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJ4-HF-tfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="mYG-xA-LhG"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="D6W-Wn-PL1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZDj-wf-feU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2721" y="1064"/>
+        </scene>
         <!--Item-->
         <scene sceneID="CuR-48-y9P">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vIB-zc-7h6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="aMZ-tQ-ssZ"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person.fill" catalog="system" id="aMZ-tQ-ssZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1z7-in-2FR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -574,6 +592,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="guitars" catalog="system" width="64" height="52"/>
         <image name="pedalBoard" width="588" height="302"/>
+        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>

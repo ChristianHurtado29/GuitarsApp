@@ -20,10 +20,11 @@ class PlayerCell: UITableViewCell {
     
     func configureCell (for player: Player){
         playerName.text = player.name
-        hometownLabel.text = "Hometown: \(player.hometown)"
-        bandLabel.text = "Band: \(player.band)"
+        hometownLabel.text = player.hometown
+        bandLabel.text = player.band
         genreLabel.text = "Genre: \(player.genre)"
         songLabel.text = "Known song: \(player.knownSong)"
         yearsActive.text = "Years active: \(player.years)"
+        cellImage.image = UIImage(named: player.image)
     }
 }
