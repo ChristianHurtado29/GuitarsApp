@@ -13,12 +13,12 @@ class DetailedPlayerViewController: UIViewController {
     var player: Player?
     
     @IBOutlet weak var backgroundImage: UIImageView!
-    
+    @IBOutlet weak var descriptiveView: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         backgroundImage.image = UIImage(named: player!.backgroundImage)
-       
+        descriptiveView.text = player?.description
     }
 
 }
