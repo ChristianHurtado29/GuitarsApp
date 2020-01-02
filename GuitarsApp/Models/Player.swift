@@ -18,6 +18,9 @@ struct Player {
     let description: String
     let image: String
     let backgroundImage: String
+    let guitar: String
+    let pedal: String
+    let amp: String
     
     static let allPlayers: [Player] = [
         Player(name: "Christian Hurtado",
@@ -28,7 +31,10 @@ struct Player {
                years: "2009 - present",
                description: "",
                image: "ChristianHurtadoImg",
-               backgroundImage: "ChristianHurtadoBackgroundImg"),
+               backgroundImage: "ChristianHurtadoBackgroundImg",
+               guitar: "FenderStrat",
+               pedal: "BluesOverdrive",
+               amp: ""),
         Player(name: "John Mayer",
                band: "John Mayer",
                hometown: "Bridgeport, Connecticut",
@@ -37,7 +43,10 @@ struct Player {
                years: "1998 - present",
                description: "",
                image: "JohnMayerImg",
-               backgroundImage: "JohnMayerBackgroundImg"),
+               backgroundImage: "JohnMayerBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "Jimi Hendrix",
                band: "The Jimi Hendrix Experience",
                hometown: "Seattle, Washington",
@@ -46,7 +55,10 @@ struct Player {
                years: "1963 - 1970",
                description: "",
                image: "JimiHendrixImg",
-               backgroundImage: "JimiHendrixBackgroundImg"),
+               backgroundImage: "JimiHendrixBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "B.B. King",
                band: "B.B. King",
                hometown: "Itta Bena, Mississippi",
@@ -55,7 +67,10 @@ struct Player {
                years: "1942 - 2014",
                description: "",
                image: "BBKingImg",
-               backgroundImage: "BBKingBackgroundImg"),
+               backgroundImage: "BBKingBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "Slash",
                band: "Guns n' Roses",
                hometown: "London, England",
@@ -64,7 +79,10 @@ struct Player {
                years: "1981 - present",
                description: "SLASH was born in Hampstead (London), England on July 23, 1965, and he was raised in Stoke-On-Trent, Staffordshire, England. His given name is Saul Hudson. His mother was a Black American, and his father is a white Englishman.",
                image: "SlashImg",
-               backgroundImage: "SlashBackgroundImg"),
+               backgroundImage: "SlashBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "Bob Marley",
                band: "Bob Marley & the Wailers",
                hometown: "Kingston, Jamaica",
@@ -73,7 +91,10 @@ struct Player {
                years: "1962 - 1981",
                description: "",
                image: "BobMarleyImg",
-               backgroundImage: "BobMarleyBackgroundImg"),
+               backgroundImage: "BobMarleyBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "James Hetfield",
                band: "Metallica",
                hometown: "Downey, California",
@@ -82,7 +103,10 @@ struct Player {
                years: "1978 - present",
                description: "",
                image: "JamesHetfieldImg",
-               backgroundImage: "JamesHetfieldBackgroundImg"),
+               backgroundImage: "JamesHetfieldBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: ""),
         Player(name: "Juanes",
                band: "Juanes",
                hometown: "Medellin, Colombia",
@@ -91,6 +115,9 @@ struct Player {
                years: "1988 - present",
                description: "",
                image: "JuanesImg",
-               backgroundImage: "JuanesBackgroundImg")
+               backgroundImage: "JuanesBackgroundImg",
+               guitar: "",
+               pedal: "",
+               amp: "")
     ]
 }
