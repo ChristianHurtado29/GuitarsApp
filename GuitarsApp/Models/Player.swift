@@ -32,8 +32,8 @@ struct Player {
                description: "",
                image: "ChristianHurtadoImg",
                backgroundImage: "ChristianHurtadoBackgroundImg",
-               guitar: "FenderStrat",
-               pedal: "BluesOverdrive",
+               guitar: "Fender Stratocaster",
+               pedal: "Boss Blues Driver",
                amp: ""),
         Player(name: "John Mayer",
                band: "John Mayer",
@@ -118,6 +118,18 @@ struct Player {
                backgroundImage: "JuanesBackgroundImg",
                guitar: "",
                pedal: "",
-               amp: "")
+               amp: ""),
+//        Player(name: <#T##String#>,
+//               band: <#T##String#>,
+//               hometown: <#T##String#>,
+//               genre: <#T##String#>,
+//               knownSong: <#T##String#>,
+//               years: <#T##String#>,
+//               description: <#T##String#>,
+//               image: <#T##String#>,
+//               backgroundImage: <#T##String#>,
+//               guitar: <#T##String#>,
+//               pedal: <#T##String#>,
+//               amp: <#T##String#>)
     ]
 }

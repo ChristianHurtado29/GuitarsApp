@@ -591,7 +591,7 @@
                     <navigationItem key="navigationItem" id="D6W-Wn-PL1">
                         <barButtonItem key="rightBarButtonItem" title="Next" id="zVL-b8-uHM">
                             <connections>
-                                <segue destination="TP5-zi-WsT" kind="show" id="gMV-WJ-ot6"/>
+                                <segue destination="TP5-zi-WsT" kind="show" id="a9u-IT-tJE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -604,47 +604,61 @@
             </objects>
             <point key="canvasLocation" x="2598.5507246376815" y="1064.7321428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Rig View Controller-->
         <scene sceneID="WEA-AC-Qia">
             <objects>
-                <viewController id="TP5-zi-WsT" sceneMemberID="viewController">
+                <viewController id="TP5-zi-WsT" customClass="RigViewController" customModule="GuitarsApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LRg-8y-WkO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-Xa-gSU">
-                                <rect key="frame" x="20" y="140" width="374" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ms5-Xa-gSU">
+                                <rect key="frame" x="20" y="140" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="guitarLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRo-5R-t6O">
-                                <rect key="frame" x="20" y="202" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="168.5" width="374" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9WY-ra-7ad">
-                                <rect key="frame" x="20" y="241.5" width="374" height="128"/>
+                                <rect key="frame" x="20" y="208" width="374" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pedalLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmH-Ph-3hm">
-                                <rect key="frame" x="20" y="377.5" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="344" width="374" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dLl-z5-l9d">
-                                <rect key="frame" x="20" y="417" width="374" height="128"/>
+                                <rect key="frame" x="20" y="383.5" width="374" height="128"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ampLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sc0-bH-WzB">
-                                <rect key="frame" x="20" y="553" width="374" height="31.5"/>
+                                <rect key="frame" x="20" y="519.5" width="374" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uzV-Cs-BIR">
-                                <rect key="frame" x="20" y="592.5" width="374" height="128"/>
+                                <rect key="frame" x="20" y="559" width="374" height="128"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m2L-eU-hDp">
+                                <rect key="frame" x="20" y="695" width="374" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="priceLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob9-wt-hNc">
+                                <rect key="frame" x="20" y="724" width="374" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -676,10 +690,20 @@
                         <viewLayoutGuide key="safeArea" id="gLJ-Mb-6kh"/>
                     </view>
                     <navigationItem key="navigationItem" id="NeA-8G-PMk"/>
+                    <connections>
+                        <outlet property="ampImg" destination="uzV-Cs-BIR" id="bSS-3o-04O"/>
+                        <outlet property="ampLabel" destination="sc0-bH-WzB" id="JAO-gR-SKo"/>
+                        <outlet property="guitarImg" destination="9WY-ra-7ad" id="kGs-T2-UZw"/>
+                        <outlet property="guitarLabel" destination="YRo-5R-t6O" id="2eg-FM-MEW"/>
+                        <outlet property="nameLabel" destination="Ms5-Xa-gSU" id="hz0-La-px8"/>
+                        <outlet property="pedalImg" destination="dLl-z5-l9d" id="IGR-Cv-kyo"/>
+                        <outlet property="pedalLabel" destination="HmH-Ph-3hm" id="B2l-0O-VMR"/>
+                        <outlet property="priceLabel" destination="Ob9-wt-hNc" id="EDZ-Mq-eAD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZK-du-1yO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3422" y="1065"/>
+            <point key="canvasLocation" x="3421.739130434783" y="1064.7321428571429"/>
         </scene>
         <!--Item-->
         <scene sceneID="CuR-48-y9P">

@@ -11,6 +11,7 @@
 		13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6723B5BB62001CFF51 /* AmpCell.swift */; };
 		13416A6A23B5BC2F001CFF51 /* AmpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13416A6923B5BC2F001CFF51 /* AmpViewController.swift */; };
 		1342726B2397151D00A922EE /* GuitarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1342726A2397151D00A922EE /* GuitarCell.swift */; };
+		1343E32223BD6C06003B0EDD /* RigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1343E32123BD6C06003B0EDD /* RigViewController.swift */; };
 		135FE2A0238A1FB80003DD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE29F238A1FB80003DD94 /* AppDelegate.swift */; };
 		135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */; };
 		135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A3238A1FB80003DD94 /* guitarViewController.swift */; };
@@ -32,6 +33,7 @@
 		13416A6723B5BB62001CFF51 /* AmpCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpCell.swift; sourceTree = "<group>"; };
 		13416A6923B5BC2F001CFF51 /* AmpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpViewController.swift; sourceTree = "<group>"; };
 		1342726A2397151D00A922EE /* GuitarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuitarCell.swift; sourceTree = "<group>"; };
+		1343E32123BD6C06003B0EDD /* RigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RigViewController.swift; sourceTree = "<group>"; };
 		135FE29C238A1FB80003DD94 /* GuitarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FE29F238A1FB80003DD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				13416A6923B5BC2F001CFF51 /* AmpViewController.swift */,
 				13FA3A4723B83175007D5DCB /* PlayerViewController.swift */,
 				1319D08E23B94B9D005DB1B9 /* DetailedPlayerViewController.swift */,
+				1343E32123BD6C06003B0EDD /* RigViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				13416A6823B5BB62001CFF51 /* AmpCell.swift in Sources */,
 				135FE2E4238C822D0003DD94 /* PedalCell.swift in Sources */,
 				13FA3A4A23B8337E007D5DCB /* PlayerCell.swift in Sources */,
+				1343E32223BD6C06003B0EDD /* RigViewController.swift in Sources */,
 				136C249223B828670011ECF0 /* Player.swift in Sources */,
 				135FE2B8238A59C70003DD94 /* Pedals.swift in Sources */,
 				135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */,

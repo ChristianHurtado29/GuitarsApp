@@ -24,7 +24,7 @@ struct Guitar {
                series: "Stratocaster",
                players: ["John Frusciante", "John Mayer", "Eric Clapton", "Christian Hurtado", "David Gilmour", "Jimi Hendrix"],
                yearIntro: 1954,
-               guitarImageName: "fenderStrat",
+               guitarImageName: "Fender Stratocaster",
                description: "",
                avgPrice: 999.99),
         
@@ -33,7 +33,7 @@ struct Guitar {
                series: "Les Paul",
                players: ["Slash","Chuck Berry", "Joan Jett", "Jimmy Page"],
                yearIntro: 1952,
-               guitarImageName: "gibsonLesPaul",
+               guitarImageName: "Gibson Les Paul",
                description: "",
                avgPrice: 1299.99),
         
@@ -42,7 +42,7 @@ struct Guitar {
                series: "Telecaster",
                players: ["Jeff Buckley","Jonny Greenwood", "George Harrison"],
                yearIntro: 1950,
-               guitarImageName: "fenderTele",
+               guitarImageName: "Fender Telecaster",
                description: "",
                avgPrice: 1199.99),
     
@@ -51,7 +51,7 @@ struct Guitar {
                series: "SG",
                players: ["Angus Young","Tony Iommi", ""],
                yearIntro: 1961,
-               guitarImageName: "gibsonSG",
+               guitarImageName: "Gibson SG",
                description: "",
                avgPrice: 1199.99),
         
@@ -60,7 +60,7 @@ struct Guitar {
                series: "Flying V",
                players: ["James Hetfield", "Dave Mustaine", "Kerry King"],
                yearIntro: 1958,
-               guitarImageName: "gibsonFlyingV",
+               guitarImageName: "Gibson Flying V",
                description: "",
                avgPrice: 799.99)
   /*      Guitar(brand: "",

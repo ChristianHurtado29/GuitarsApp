@@ -20,5 +20,12 @@ class DetailedPlayerViewController: UIViewController {
         backgroundImage.image = UIImage(named: player!.backgroundImage)
         descriptiveView.text = player?.description
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let rigVC = segue.destination as? RigViewController else {
+            fatalError("missed step")
+        }
+        rigVC.player = player
+    }
 
 }
