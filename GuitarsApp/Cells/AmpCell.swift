@@ -21,5 +21,6 @@ class AmpCell: UITableViewCell {
         ampBrand.text = amp.brand
         ampName.text = amp.series
         ampKnobs.text = amp.knobs.description
+        ampImg.image = UIImage(named: amp.picture)
       }
 }

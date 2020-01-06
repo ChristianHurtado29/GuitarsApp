@@ -34,7 +34,7 @@ struct Player {
                backgroundImage: "ChristianHurtadoBackgroundImg",
                guitar: "Fender Stratocaster",
                pedal: "Boss Blues Driver",
-               amp: ""),
+               amp: "'65 Deluxe Reverb 22-watt 1x12"),
         Player(name: "John Mayer",
                band: "John Mayer",
                hometown: "Bridgeport, Connecticut",

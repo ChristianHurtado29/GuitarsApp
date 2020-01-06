@@ -354,6 +354,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="ampBrand" destination="jcI-Xn-SKl" id="iCf-49-skC"/>
+                                            <outlet property="ampImg" destination="8pc-jN-pj9" id="ep9-7n-Ari"/>
                                             <outlet property="ampKnobs" destination="bWe-4O-HnO" id="KND-Le-KK7"/>
                                             <outlet property="ampName" destination="TTw-lh-2pZ" id="Mgw-PW-BoO"/>
                                         </connections>
