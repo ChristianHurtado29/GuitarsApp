@@ -383,11 +383,11 @@
             </objects>
             <point key="canvasLocation" x="3408.6956521739135" y="129.91071428571428"/>
         </scene>
-        <!--Item-->
+        <!--Guitars-->
         <scene sceneID="tUp-Qu-Zcf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I7B-XO-MhG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="guitars" catalog="system" id="cN8-sk-Imy"/>
+                    <tabBarItem key="tabBarItem" title="Guitars" image="guitars" catalog="system" selectedImage="guitars" id="cN8-sk-Imy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="cr6-Dm-Gzq">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -706,11 +706,11 @@
             </objects>
             <point key="canvasLocation" x="3421.739130434783" y="1064.7321428571429"/>
         </scene>
-        <!--Item-->
+        <!--Players-->
         <scene sceneID="CuR-48-y9P">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vIB-zc-7h6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person.fill" catalog="system" id="aMZ-tQ-ssZ"/>
+                    <tabBarItem key="tabBarItem" title="Players" image="person.fill" catalog="system" selectedImage="person.fill" id="aMZ-tQ-ssZ"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="1z7-in-2FR">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
