@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class PlayerViewController: UIViewController {
     
     
     @IBOutlet weak var tableView: UITableView!
     
+        
     var players = [Player](){
     didSet{
         tableView?.reloadData()
@@ -35,6 +37,7 @@ class PlayerViewController: UIViewController {
         detailedPlayerController.player = player
     }
     
+
     
     func loadData() {
         players = Player.allPlayers
@@ -52,6 +55,9 @@ extension PlayerViewController: UITableViewDataSource {
         }
         
         let selPlayer = players[indexPath.row]
+//        if selPlayer.name == "Christian Hurtado" {
+//            playSound(file: "music", ext: "")
+//        }
         cell.configureCell(for: selPlayer)
         return cell
     }

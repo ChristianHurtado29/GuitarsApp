@@ -29,7 +29,6 @@ class RigViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         nameLabel.text = "\(player!.name)'s profile:"
         guitarLabel.text = player!.guitar
         guitarImg.image = UIImage(named: player!.guitar)
