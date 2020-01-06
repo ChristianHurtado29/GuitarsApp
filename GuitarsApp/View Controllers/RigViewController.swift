@@ -37,6 +37,8 @@ class RigViewController: UIViewController {
         ampLabel.text = player?.amp
         ampImg.image = UIImage(named: player!.amp)
         
+  //      let avgPri = guitar?.avgPrice
+        
    //     priceLabel.text = String(guitar!.avgPrice + pedal!.price)
     }
 

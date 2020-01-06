@@ -28,7 +28,6 @@ class DetailedPlayerViewController: UIViewController {
                 fatalError()
             }
         }
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,5 +43,4 @@ class DetailedPlayerViewController: UIViewController {
         }
         rigVC.player = player
     }
-
 }

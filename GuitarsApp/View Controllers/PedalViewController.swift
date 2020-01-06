@@ -13,8 +13,6 @@ class PedalViewController: UIViewController{
 @IBOutlet weak var pedalTableView:UITableView!
 @IBOutlet weak var ampButtonBackdrop: UIImageView!
     
-    
-    
     var pedals = [[Pedal]]()
 
 override func viewDidLoad(){

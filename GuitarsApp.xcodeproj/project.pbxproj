@@ -20,6 +20,9 @@
 		1349815F23C38FE90049993D /* Bob Marley.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1349815823C38FE80049993D /* Bob Marley.mp3 */; };
 		1349816023C38FE90049993D /* B.B. King.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1349815923C38FE80049993D /* B.B. King.mp3 */; };
 		1349816123C38FE90049993D /* Slash.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1349815A23C38FE90049993D /* Slash.mp3 */; };
+		1349816323C3DA010049993D /* Open.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1349816223C3DA010049993D /* Open.mp3 */; };
+		1349816823C3E75C0049993D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1349816723C3E75C0049993D /* AVFoundation.framework */; };
+		1349816A23C3ECE30049993D /* Eamon McMullen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1349816923C3ECE30049993D /* Eamon McMullen.mp3 */; };
 		135FE2A0238A1FB80003DD94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE29F238A1FB80003DD94 /* AppDelegate.swift */; };
 		135FE2A2238A1FB80003DD94 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */; };
 		135FE2A4238A1FB80003DD94 /* guitarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135FE2A3238A1FB80003DD94 /* guitarViewController.swift */; };
@@ -50,6 +53,9 @@
 		1349815823C38FE80049993D /* Bob Marley.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Bob Marley.mp3"; sourceTree = "<group>"; };
 		1349815923C38FE80049993D /* B.B. King.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "B.B. King.mp3"; sourceTree = "<group>"; };
 		1349815A23C38FE90049993D /* Slash.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Slash.mp3; sourceTree = "<group>"; };
+		1349816223C3DA010049993D /* Open.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Open.mp3; sourceTree = "<group>"; };
+		1349816723C3E75C0049993D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1349816923C3ECE30049993D /* Eamon McMullen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Eamon McMullen.mp3"; path = "../../../Downloads/Eamon McMullen.mp3"; sourceTree = "<group>"; };
 		135FE29C238A1FB80003DD94 /* GuitarsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135FE29F238A1FB80003DD94 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135FE2A1238A1FB80003DD94 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1349816823C3E75C0049993D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,10 +124,12 @@
 		1349815123C389E10049993D /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
+				1349816223C3DA010049993D /* Open.mp3 */,
 				1349815223C38A260049993D /* Christian Hurtado.mp3 */,
 				1349815923C38FE80049993D /* B.B. King.mp3 */,
 				1349815823C38FE80049993D /* Bob Marley.mp3 */,
 				1349815423C38FE70049993D /* John Mayer.mp3 */,
+				1349816923C3ECE30049993D /* Eamon McMullen.mp3 */,
 				1349815A23C38FE90049993D /* Slash.mp3 */,
 				1349815623C38FE70049993D /* Juanes.mp3 */,
 				1349815523C38FE70049993D /* James Hetfield.mp3 */,
@@ -129,12 +138,21 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
+		1349816623C3E75C0049993D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1349816723C3E75C0049993D /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		135FE293238A1FB80003DD94 = {
 			isa = PBXGroup;
 			children = (
 				1349815123C389E10049993D /* Sounds */,
 				135FE29E238A1FB80003DD94 /* GuitarsApp */,
 				135FE29D238A1FB80003DD94 /* Products */,
+				1349816623C3E75C0049993D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -220,9 +238,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1349816A23C3ECE30049993D /* Eamon McMullen.mp3 in Resources */,
 				1349815C23C38FE90049993D /* James Hetfield.mp3 in Resources */,
 				1349815B23C38FE90049993D /* John Mayer.mp3 in Resources */,
 				135FE2AC238A1FBB0003DD94 /* LaunchScreen.storyboard in Resources */,
+				1349816323C3DA010049993D /* Open.mp3 in Resources */,
 				1349816023C38FE90049993D /* B.B. King.mp3 in Resources */,
 				135FE2A9238A1FBB0003DD94 /* Assets.xcassets in Resources */,
 				1349816123C38FE90049993D /* Slash.mp3 in Resources */,
