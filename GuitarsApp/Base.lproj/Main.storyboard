@@ -177,7 +177,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-YH-4U1">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jw9-YH-4U1">
                                                     <rect key="frame" x="305" y="0.0" width="109" height="111"/>
                                                 </imageView>
                                             </subviews>
@@ -193,6 +193,7 @@
                                                 <constraint firstItem="OsS-sD-4dy" firstAttribute="top" secondItem="4Ql-Fc-tYq" secondAttribute="top" id="Nxn-8H-hO6"/>
                                                 <constraint firstItem="0cp-G2-enS" firstAttribute="leading" secondItem="4Ql-Fc-tYq" secondAttribute="leading" id="T2b-6c-O2k"/>
                                                 <constraint firstAttribute="trailing" secondItem="jw9-YH-4U1" secondAttribute="trailing" id="bg2-fc-dX7"/>
+                                                <constraint firstItem="jw9-YH-4U1" firstAttribute="width" secondItem="4Ql-Fc-tYq" secondAttribute="width" multiplier="0.263285" id="jJY-DW-p3J"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
