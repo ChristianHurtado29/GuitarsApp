@@ -3,7 +3,7 @@ Best ever guitar app
 
 Planned on being crowd sourced
 
-#ScreenshotOfTheApp
+# ScreenshotOfTheApp
 
 
 
@@ -12,6 +12,6 @@ Planned on being crowd sourced
 
 
 
-#GIFOfTheApp
+## GIFOfTheApp
 
 
